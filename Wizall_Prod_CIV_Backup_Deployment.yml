@@ -149,8 +149,7 @@
 - hosts: CIV-WEB
   tasks:
      - name: Get HTTPD Service Status
-       status:
-          name: httpd
+       command: systemctl status httpd
        register: httpd_status
      - debug:
           msg: "{{ httpd_status }}"
@@ -158,8 +157,7 @@
 - hosts: CIV-TRN
   tasks:
      - name: Get Management Service Status
-       status:
-          name: CIV_MFS_Mgnt.service
+       command: systemctl status CIV_MFS_Mgnt.service
        register: Mgnt_status
      - debug:
           msg: "{{ Mgnt_status }}"          
