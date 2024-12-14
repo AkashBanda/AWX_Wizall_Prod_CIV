@@ -49,31 +49,31 @@
       when: service == "ReportService"  
 
     - set_fact:
-       service3: SN_MFS_Mgnt.service
+       service3: CIV_MFS_Mgnt.service
       when: service == "ManagementServices"
 
     - set_fact:
-       service3: SN_MFS_InternalTrn.service
+       service3: CIV_MFS_InternalTrn.service
       when: service == "InternalTrnService"
 
     - set_fact:
-       service3: SN_MFS_MW.service
+       service3: CIV_MFS_MW.service
       when: service == "MobifinWebService"
 
     - set_fact:
-       service3: SN_MFS_Refund.service
+       service3: CIV_MFS_Refund.service
       when: service == "RefundService"  
 
     - set_fact:
-       service3: SN_MFS_Settlement.service
+       service3: CIV_MFS_Settlement.service
       when: service == "SettlementService"
 
     - set_fact:
-       service3: SN_MFS_Tub.service
+       service3: CIV_MFS_Tub.service
       when: service == "TUBService"
 
     - set_fact:
-       service3: SN_MFS_Report.service
+       service3: CIV_MFS_Report.service
       when: service == "ReportService"
       
     - name: Taking rollback backup for {{ service }}.jar
