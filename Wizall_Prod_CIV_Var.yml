@@ -1,4 +1,4 @@
-- hosts: all
+- hosts: localhost
   tasks:
     - name: Wizall-CIV Prod Deployment Service Setting up
       template:
